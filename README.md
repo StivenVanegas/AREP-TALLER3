@@ -1,32 +1,41 @@
-## Taller de Introducción a Heroku
+## Taller Clientes y Servicios
 
-En este proyecto se realizo una aplicacion web para calcular la desviación estándar y media de un conjunto de n números reales. Usando como estructura de datos una LinkedList.
-
-### VISIÓN GENERAL
-**Spark** Framework es un conjunto de librerías para el desarrollo de aplicaciones web en Java inspirado en el framework Sinatra para Ruby. Spark incluye por defecto el servidor de aplicaciones Jetty de manera que las aplicaciones web creadas con Spark pueden lanzarse como cualquier programa Java.
-
-**Heroku** es una plataforma como servicio de computación en la Nube que soporta distintos lenguajes de programación.
-
-La **media** es el promedio de un conjunto de datos. El promedio es la medida de ubicación más común para un conjunto de números. El promedio ubica el centro de los datos.
-
-La **desviación estándar** es una medida de la extensión o dispersión de un conjunto de datos. Cuanto más dispersos estén los valores, mayor será la desviación estándar.
-
-Las **LinkedList** son un tipo de datos abstractos comunes que se utilizan para mantener colecciones de datos.
+En este taller se presentan diferentes retos en donde se explora los conceptos de esquemas de nombres y de clientes y servicios. Adicionalmente, el taller explora la arquitectura de las aplicaciones distribuidas sobre internet.
 
 ### APP WEB
 Aqui puede acceder a la aplicacion web para este proyecto.
 
-[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://enigmatic-waters-77275.herokuapp.com/index)
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://radiant-bayou-20008.herokuapp.com/)
 
 ### Integración Continua
 
-[![CircleCI](https://circleci.com/gh/StivenVanegas/AREP-TALLER2.svg?style=svg)](https://app.circleci.com/pipelines/github/StivenVanegas/AREP-TALLER2)
+[![CircleCI](https://circleci.com/gh/StivenVanegas/AREP-TALLER3.svg?style=svg)](https://app.circleci.com/pipelines/github/StivenVanegas/AREP-TALLER3)
 
 ### REQUISITOS
 * Java
 * Maven
 * Git
 * Heroku
+
+### COMPILE
+
+   `mvn package`
+
+### EXECUTE
+
+* Ejercicio 1
+
+`java -cp target/classes edu.escuelaing.arem.ejercicios.URLPrint`
+
+* Ejercicio 2
+
+`java -cp target/classes edu.escuelaing.arem.ejercicios.URLReader`
+
+* Ejercicio 3
+
+`java -cp target/classes edu.escuelaing.arem.ejercicios.EchoServer`
+
+`java -cp target/classes edu.escuelaing.arem.ejercicios.EchoClient`
 
 ### JAVADOC
 

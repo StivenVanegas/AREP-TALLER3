@@ -13,8 +13,11 @@ import java.net.*;
 import java.io.*;
 
 public class HttpServer {
-
-    public static void main(String[] args) throws IOException {
+    
+    private int port;
+    
+    public void startServer(int httpPort) throws IOException {
+        port = httpPort;
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(getPort());
@@ -27,7 +30,7 @@ public class HttpServer {
         while (running) {
             Socket clientSocket = null;
             try {
-                System.out.println("Listo para recibir ...");
+                System.out.println("Listo para recibir en puerto "+getPort()+" ...");
                 clientSocket = serverSocket.accept();
             } catch (IOException e) {
                 System.err.println("Accept failed.");
@@ -65,10 +68,11 @@ public class HttpServer {
         serverSocket.close();
     }
 
-    private static int getPort() {
-        if(System.getenv("PORT") != null){
-            return Integer.parseInt(System.getenv("PORT"));
-        }
-        return 36000;
+    public void setPort(int port) {
+        this.port = port;
+    }
+    
+    public int getPort() {
+        return this.port;
     }
 }

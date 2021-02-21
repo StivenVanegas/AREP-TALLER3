@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes edu.escuelaing.arem.httpserver.HttpServer
+web: java $JAVA_OPTS -cp target/classes edu.escuelaing.arem.picosparkweb.DemoRuntime
